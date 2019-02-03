@@ -61,9 +61,9 @@
 				long X = System.currentTimeMillis()-CurrMillis;
 				if(X>=100){
 					//throw new Exception("WAITED TOO LONG FOR RESPONSE FOR GRAPHS!!");
-					System.out.println("WAIT TIME:"+X);
-					response.setHeader("Refresh","1; URL="+request.getRequestURL()+"?"+request.getQueryString());
-					return;
+					System.out.println("WAIT TIME1:"+X);
+					//response.setHeader("Refresh","1; URL="+request.getRequestURL()+"?"+request.getQueryString());
+					//return;
 				}
 			}
 			
@@ -71,8 +71,8 @@
 				long X = System.currentTimeMillis()-CurrMillis;
 				if(X>=100){
 					//throw new Exception("WAITED TOO LONG FOR RESPONSE FOR GRAPHS!!");
-					System.out.println("WAIT TIME:"+X);
-					response.setHeader("Refresh","1; URL="+request.getRequestURL()+"?"+request.getQueryString());
+					System.out.println("WAIT TIME2:"+X);
+					//response.setHeader("Refresh","1; URL="+request.getRequestURL()+"?"+request.getQueryString());
 					return;
 				}
 			}
